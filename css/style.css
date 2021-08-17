@@ -1,0 +1,38 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/* DEBUT MENU */
+body.formulaire > header > nav.nav > ol {
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    line-height: 70px;
+}
+
+body.formulaire > header > nav.nav > ol > li {
+    list-style-type: none;
+}
+
+
+body.formulaire > header > nav.nav > ol > li > a {
+    text-decoration: none;
+    color: black;
+    margin: 30px;
+    padding: 10px;
+} 
+
+body.formulaire > header > h1 {
+    text-align: center;
+    padding: 30px;
+}
+/* FIN MENU */
+
+/* DEBUT FORMULAIRE */
+body.formulaire > form > div.box > label{
+    color: red;
+}
+
+/* FIN FORMULAIRE */

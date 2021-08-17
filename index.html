@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Blason73-Savoie.svg/164px-Blason73-Savoie.svg.png"> 
+    <title>Projet gîte</title>
+</head>
+<body> 
+    <header>
+        <section class="zoom">
+            <img src="media/mountain1.png" id="layer1" alt="montagne">
+            <img src="media/mountain2.png" id="layer2" alt="montagne">
+            <img src="media/GIte-LOGO.png" alt="" id="text">
+        </section>
+        <section class="content">
+            
+        
+        <form action="#" method="post">
+            <div class="formReach">
+                
+                    <label class="case" for="place">Destination:</label>
+                    <input type="text" id="place" name="place">
+                    <label class="case" for="arrive">Arrivée:</label>
+                    <input type="date" id="start" name="start">
+                    <label class="case" for="departure">Départ:</label>
+                    <input type="date" id="leave" name="leave">
+                    <div class="button">
+                        <a class="neon" href="#">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <button type="submit">Rechercher</button>               
+                    </div>
+            </div>
+        
+        </form>
+    </section> 
+    </header>
+    <main class="container">
+        
+        <section class="photo">
+            <div>
+                <img src="https://cdn-s-www.ledauphine.com/images/3B265FE5-35A0-4532-926A-73DBA05E6236/NW_detail_M/a-partir-de-2-459-la-nuit-pour-le-chalet-dalmore-a-chamonix-(haute-savoie)-chalet-haut-de-gamme-situe-a-quelques-minutes-du-domaine-skiable-de-brevent-un-chauffeur-est-present-pour-deposer-les-locataires-au-pied-des-pistes-a-l-interieur-on-retrouve-un-home-cinema-un-sauna-et-une-salle-de-massage-a-l-exterieur-on-peut-profiter-d-un-jacuzzi-et-d-une-piscine-chauffee-capture-d-ecran-trip-advisor-1576680650.jpg" alt="" width="450px" height="350px">
+            </div>
+            <div class="flex">
+                <div><img src="https://lh3.googleusercontent.com/proxy/JDkMGL63AWe2aP6mL7gHxt5poPSItuLh2fN8q4VMwYASH-8c6s--uMlSsclnrdC6e-7FFprBm3DPYTsys2OhR3UjqspYMrmo5DBrtqWsOYpoqAPe3-dYxOtSaqqW" alt="" width="200px" height="150px">
+                </div>   
+                <div><img src="https://resize-elle.ladmedia.fr/rcrop/638,,forcex/img/var/plain_site/storage/images/deco/art-decoration/visite-d-un-chalet-typique/70338310-1-fre-FR/Decouvrez-un-chalet-typique-au-coeur-de-la-Savoie.jpg" alt="chalet" width="200px" height="150px">
+                </div>
+            </div>
+
+        </section>
+        
+    </main>
+    <footer>
+        <div class="bandeau">
+
+        </div>
+    </footer>
+    <script type="text/javascript">
+        var layer1 =document.getElementById('layer1')
+        scroll = window.pageYOffset;
+        document.addEventListener('scroll',function(e){
+            var offset = window.pageYOffset;
+            scroll = offset;
+            layer1.style.width =(100 + scroll/5) + '%';      
+        });
+
+        var layer2 =document.getElementById('layer2')
+        scroll = window.pageYOffset;
+        document.addEventListener('scroll',function(e){
+            var offset = window.pageYOffset;
+            scroll = offset;
+            layer2.style.width = (100 + scroll/5) + '%';
+            layer2.style.left = scroll/50 + '%';      
+        });
+
+        var text =document.getElementById('text')
+        scroll = window.pageYOffset;
+        document.addEventListener('scroll',function(e){
+            var offset = window.pageYOffset;
+            scroll = offset;
+            layer2.style.width =(100 + scroll/5) + '%';
+            text.style.top = -scroll/20 + '%';      
+        });
+
+    </script>
+</body>
+</html>

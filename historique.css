@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+
+    background-image: url(media/formmick.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+header{
+
+    padding-bottom: 50px;
+}
+
+header > nav{
+    position: fixed;
+    right: 50px;
+    margin-top: 12px;
+}
+
+header > nav > ul > li{
+    display: inline;
+    margin-left: 20px;
+    
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+a:hover{
+    color: rgba(6, 42, 160, 0.548);
+}
+
+fieldset{      
+    background: linear-gradient(180deg, rgba(3, 82, 146, 0.7) 0%, rgba(235, 232, 228, 0.7) 100%);
+    border: solid black 2px;
+    border-radius: 10px;
+    width: 1000px;
+    margin-top: 60px;
+    height: 600px;
+
+}
+
+legend{
+    font-size: 50px;
+    text-align: center;
+}
+
+
+
+table > tbody > tr > td{
+
+    text-align: center;
+}    
+    
+thead > tr{
+
+    background-color: black;
+    border-left: solid 3px white;
+    border-right: solid 3px white;
+}
+
+table.histoire{
+    width: 1200px;
+    border-collapse: collapse;
+    margin: 15px;
+}
+
+thead > tr > th{
+
+    color: rgba(214, 9, 9, 0.925);
+    padding: 15px;
+}
+    
+tbody > tr > td > button{
+
+    margin-top: 12px;
+    
+}
+
+tbody{
+
+    background-color: rgba(42, 166, 248, 0.7);
+    border-spacing: 5px 1rem;
+}
+
+tbody > tr > td{
+
+    font-size: 18px;
+    
+}
+
+tbody > tr:hover{
+
+    background-color:  rgba(6, 42, 160, 0.548);
+}
+
+tbody > tr:nth-child(even){
+    background-color: rgba(232, 238, 241, 0.897);
+}
+
+tbody > tr:nth-child(even):hover{
+    background-color:  rgba(6, 42, 160, 0.548);
+}

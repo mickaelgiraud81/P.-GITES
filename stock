@@ -1,0 +1,70 @@
+<!--<div class="row">
+                <nav>
+                    <ul class="pagination">
+                        
+                        <li class="page-item <?= ($currentPage == 1) ? "disabled" : "" ?>">
+                            <a href="./?page=<?= $currentPage - 1 ?>" class="page-link">Précédente</a>
+                        </li>
+                        <?php for($page = 1; $page <= $pages; $page++): ?>
+                          
+                          <li class="page-item <?= ($currentPage == $page) ? "active" : "" ?>">
+                                <a href="./?page=<?= $page ?>" class="page-link"><?= $page ?></a>
+                            </li>
+                        <?php endfor ?>
+                          
+                          <li class="page-item <?= ($currentPage == $pages) ? "disabled" : "" ?>">
+                            <a href="./?page=<?= $currentPage + 1 ?>" class="page-link">Suivante</a>
+                        </li>
+                    </ul>
+                    </nav>
+                    </div>-->
+
+
+
+
+
+
+<?php
+                
+                    $db = new PDO('mysql:host=localhost;dbname=lodge_db', 'root');
+                
+                    $pageParPage = 10;
+                    $pageParPageReq = $db->query('SELECT idlodge FROM lodge');
+
+                    $pagestotals = $pageParPageReq->rowCount();
+
+                    if(isset($_GET['page']) AND !empty($_GET['page'])){
+
+                        $_GET['page'] = intval($_GET['page']);
+                        $pageCourante = $_GET['page'];
+
+                    } else{
+                        $pageCourante = 1;
+                    }
+
+                    $depart = ($pageCourante-1) * $pageParPage;
+                ?>
+                <?php
+
+                $page = $db->query('SELECT * FROM videos ORDER BY id DESC LIMIT '.$depart.','.$pageParPage);
+                while($lodge = $page->fetch()){
+                ?>
+                }
+                
+                <b>N°<?php echo $lodge['idlodge']; ?> - <?php echo $lodge['titre']; ?></b><br />
+                <i><?php echo $lodge['description']; ?></i>
+                <br /><br />
+                <?php
+                }
+                ?>
+                <?php
+                for($i=1;$i<=$pagesTotales;$i++) {
+                    if($i == $pageCourante) {
+                        echo $i.' ';
+                    } else {
+                        echo '<a href="index.php?page='.$i.'">'.$i.'</a> ';
+                    }
+                }
+                
+               ?>
+      

@@ -1,0 +1,435 @@
+ *{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    background-image: url(media/formmick.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+header > nav{
+    position: absolute;
+    right: 50px;
+    
+}
+
+
+header > nav > ol > li{
+    display: inline;
+    margin: 0px 0px 0px 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+a:hover{
+    color: rgba(6, 42, 160, 0.548);
+}
+
+fieldset{  
+    background: linear-gradient(180deg, rgba(3, 82, 146, 0.7) 0%, rgba(235, 232, 228, 0.7) 100%);
+    border: solid black 2px;
+    border-radius: 10px;
+    width: 800px;
+    margin: 150px auto 0 auto;
+    height: 540px;
+}
+
+
+legend{
+    font-size: 50px;
+    text-align: center;
+}
+
+.formulaire{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 60px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-top: 50px;
+}
+
+.wrap{
+    display: inline;
+    margin-bottom: 20px;
+}
+
+.wrap label{
+    width:100px;
+    font-size: 20px;
+    color: black;
+}
+
+.wrap input{
+    width:150px;
+    float: right;
+}
+
+.specificity{
+    display:flex;
+    justify-content: space-around;
+    margin-left: -8px;
+    font-family: "Times New Roman";
+}
+
+.specificity label{
+    font-size: 20px;
+    color: black;
+}
+
+textarea{
+
+    height: 150px;
+    width: 200px;
+}
+
+.text_area{
+    margin-top: 33px;
+    width: 300px;
+    height: 200px;
+    margin-left: 130px;
+}
+
+.text_area label{
+
+    font-size: 20px;
+    color: black;
+}
+
+.enregistrer{
+    display: flex;
+    justify-content: center;
+}
+
+.enregistrer > input{
+    height: 40px;
+    width: 150px;
+    background: linear-gradient(180deg, rgba(46, 144, 224, 0) 0%, rgba(235, 232, 228, 0) 100%);
+    font-size: 20px;
+}
+
+.enregistrer > input:hover{
+
+    color: rgba(6, 42, 160, 0.548);
+    cursor: grab;
+}
+
+
+
+#category{
+    margin-top: 20px;
+    font-size: 20px;
+    color: black;
+    background-color: transparent;
+    border: 5px;
+    font-family: "Times New Roman";
+}
+
+#image > input{
+    float: none;
+    margin-left: -4px;
+    font-family: "Times New Roman";
+    width: 400px;
+}
+
+#image > input[type=file]::-webkit-file-upload-button{/*modification du bouton*/
+    -webkit-apparence:none;
+    background:transparent none;
+    border:none;
+    font-size: 18px;
+} */
+
+
+
+    
+
+    header > nav > ol > li{
+
+        margin: auto;
+        
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+    }
+
+    
+    fieldset{
+
+        border-radius: 10px;
+        width: 100px;
+        height: 450px;
+        margin-bottom: 200px; 
+        margin-left: 60px;
+    }  
+    
+    legend{
+        font-size: 25px;
+        text-align: auto;
+    }
+
+    .formulaire{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+    
+    .info{
+        display: flex;
+        flex-direction: column;
+        width: 80% auto;
+        margin-top: 20px;
+        margin-right: 60px;
+        
+    }
+
+    
+    .info > .wrap > label > input{
+
+        margin-top: 10px;
+        
+    }
+
+    .wrap{
+        display: inline;
+        margin-bottom: 10px;
+    }
+
+    .wrap label{
+        width:50px;
+        font-size: 20px;
+        color: black;
+        padding-left: 10px;
+        
+    }
+    
+    .wrap input{
+        width: 80% auto;
+        float: right;
+       
+    }
+
+    .specificity{
+        display:flex;
+        justify-content: space-around;
+        margin-left: -16px;
+        font-family: "Times New Roman";
+    }
+
+    .specificity label{
+        font-size: 20px;
+        color: black;
+        padding-left: 15px;
+    }
+
+    .text_area{
+        margin-top: 13px;
+        width: 150px;
+        padding-right: 120px;
+    }
+
+    .text_area > textarea{
+
+        width: 220px;
+        height: 220px;
+        margin-right: 90px;
+        margin-bottom: 50px;
+    }
+
+    textarea{
+
+        height: 200px;
+        margin-right: 80px;
+    }
+
+    .text_area label{
+
+        font-size: 20px;
+        color: black;
+        margin-top: 20px;
+        
+
+    }
+
+    .enregistrer{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    
+
+    .enregistrer > input{
+        height: 30px;
+        width: 110px;
+        background: linear-gradient(180deg, rgba(46, 144, 224, 0) 0%, rgba(235, 232, 228, 0) 100%);
+        font-size: 20px;
+    }
+
+    #category{
+        margin-top: 10px;
+        font-size: 20px;
+        color: black;
+        background-color: transparent;
+        border: 5px;
+        font-family: "Times New Roman";
+    }
+
+    #image > input[type=file]::-webkit-file-upload-button{/*modification du bouton*/
+        -webkit-apparence:none;
+        background:transparent none;
+        border:none;
+        font-size: 20px;
+    }
+
+
+@media screen and (min-width: 320px) and (max-width :568px){
+
+    body{
+        background-image: url(media/formmick.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+       
+    }
+    
+    
+    header > nav{
+        
+        
+        font-size: 10px;
+        margin: 10px auto;
+    }
+    
+    
+    header > nav > ol > li{
+       
+        display: inline;
+        margin: 0px 0px 0px 10px;
+    }
+    
+    
+    
+    a:hover{
+       
+        color: rgba(6, 42, 160, 0.548);
+    }
+    
+    fieldset{  
+       
+        border: solid black 2px;
+        margin: 0 auto;
+        height: 450px;
+        margin-bottom: 50px;
+        width:90%;
+        
+    }
+    
+    
+    legend{
+        
+        text-align: center;
+    }
+    
+    .formulaire{
+        
+      
+      margin: 10px auto;
+      
+      
+      
+    }
+    .info{
+        
+       margin: 0 auto;
+        width: 50%;
+        
+    }
+    
+    .wrap{
+        
+      padding: 10px;
+        
+    }
+    
+    .wrap label{
+        
+        font-size: 15px;
+        color: rgb(0, 26, 255);
+    }
+    
+    .wrap input{
+       
+       width: 65px;
+       
+    }
+
+    #image > input{
+
+        width: 100px;
+    }
+    
+    .specificity{
+        
+        display: flex;
+    }
+    
+    .specificity label{
+        
+        font-size: 15px;
+        color: rgb(0, 26, 255);
+    }
+    
+    
+    
+    .text_area label{
+    
+        font-size: 15px;
+        color: rgb(0, 26, 255);
+    }
+    
+    .enregistrer{
+        
+        margin-bottom: 40%;
+        margin-left: 100px;
+    }
+    
+    
+}
+    
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+

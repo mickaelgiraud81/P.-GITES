@@ -1,0 +1,350 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*Montagne parallax*/
+.zoom{
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    overflow: hidden;
+    background: url(media/bg\ \(1\).jpg) ;
+    background-size: cover;
+    padding-bottom: 0;
+}
+.zoom:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    z-index: 1000;
+    background: linear-gradient(transparent,#fff);
+}
+.zoom #layer1{
+    position: absolute;
+    left: 40%;
+    width: 100%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+.zoom #layer2{
+    position: absolute;  
+    right: 0;
+    width: 100%;
+    
+    z-index: 9;
+}
+.zoom #text{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    transform: translateY(50%);
+    
+}
+.content{
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.content h2{
+    margin: 0;
+    padding: 0;
+    font-size: 4em;
+}
+.content p{
+    font-size: 1.2em;
+
+}
+
+
+
+/*Formulaire de recherche*/
+.formReach{
+    padding-left: 20px;
+    margin: 0;
+    background-color: rgb(156, 156, 156);
+    width: 100%;
+    height: 100px;
+    display: inline-flex;
+    border-radius: 5px;
+    
+    font-size: 25px;
+    box-sizing: border-box;
+}
+.case{
+    height: 60px;
+    padding: 0;
+}
+.formReach>input{
+    margin: 20px 50px;
+    height: 60px;
+    border-radius: 5px;
+}
+label{
+    margin-top: 30px;
+}
+.formReach button{
+    border-radius:5px ;
+    background-color: teal;
+    width: 120px;
+    height: 40px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-decoration:none ;
+    font-size: 10px;
+   
+    
+    color: thistle;
+}
+ button:hover{
+    color: #0e87f8;
+    background-color: #9ecaee;
+    box-shadow: 0 0 10px #2196f3,0 0 40px #2196f3,0 0 80px #2196f3 ;
+    
+}
+/*Section photo de la page d'accueil*/
+section.photo {
+    padding-top: 30px;
+   padding-left: 300px;
+    display: flex;
+}
+ .flex{
+    
+    flex-direction: column;  
+    padding-left: 50px;
+
+}
+.photo div img{
+    padding: 5px 0 30px;
+}
+.bandeau{
+    width: 100%;
+    height: 60px;
+    background: rgb(122, 122, 122);
+}
+/*page de résultat recherche*/
+.conteneur{
+    display: flex;
+    flex-direction: column;
+    box-sizing:content-box;
+    flex-wrap: wrap;
+    
+}
+.conteneur>div>ul>li>a{
+     display: flex;
+    color: #000;   
+    padding: 5px 5px 0 10px;
+    max-height: 300px;
+    flex-direction: row;     
+}
+.conteneur>div>ul{
+    list-style: none;
+}
+.illustr:hover{
+color: yellow;
+    box-sizing: border-box;
+    box-shadow:inset 0 0 1em  darkslateblue,0 0 2em violet;
+}
+.resumer:hover{
+    color: yellow;
+    box-sizing: border-box;
+    box-shadow:inset 0 0 1em  darkslateblue,0 0 2em violet;
+}
+.finaliser:hover{
+    color: yellow;
+    box-sizing: border-box;
+    box-shadow:inset 0 0 1em  darkslateblue,0 0 2em violet;
+}
+.conteneur div.illustr{
+    text-align: center;
+    margin-right: 5px;
+    width: 25%;
+    height: 300px;
+    border: 2px solid black;
+    font-size: 50px;
+    max-height: 300px;
+    border-radius: 5px;
+    
+}
+.conteneur div.resumer{
+    margin-right: 5px;
+    width: 50%;
+    height: 300px;
+    border: 2px solid black;
+    background-color: blueviolet;
+    border-radius: 5px;
+}
+.conteneur div.resumer ul{
+    float: left;
+    font-size: 20px;
+    padding-top: 5px;
+    
+    
+}
+.conteneur div.resumer ul li{
+    padding-top: 10px;
+   
+}
+.conteneur div.finaliser{
+    width: 20%;
+    height: 300px;
+    border-radius: 5px;
+    background-color: rgb(43, 226, 141);
+border: 2px solid black;
+}
+/*Footer*/
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: coral;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    
+}
+footer div{
+    position: relative;
+    align-items: flex-start;
+    width: 200px;
+    height: 40px;
+    background-color: cornflowerblue;
+    display: inline;
+    font-size: 25px;
+    margin: 20px 100px;
+    
+}
+h3{
+    font-size: 25px;
+}
+/*Page de présentation produit*/
+.produit{
+    
+    border: 5px solid turquoise;
+    background-color: rgb(128, 247, 247);
+}
+/*section centrale présentation photo*/
+.affiche{
+    text-align: center;
+    float: left;
+    width: 65%;
+    height: auto;
+    background-color: rgb(225, 128, 245);
+}
+.affiche 
+.central{
+    margin:  auto;
+    background-color: slateblue;
+    width: 700px;
+    height: 500px;
+}
+.trio{
+    display: flex;
+    flex-direction:row ;
+    justify-content: center;
+}
+.trio>div{
+    margin-top: 20px;
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    
+    
+    background-color: rgb(156, 156, 156);
+    width: 200px;
+    height: 150px;
+}
+/*Section réservation*/
+.reservation{
+    
+    width: 30%;
+    height: 750px;
+    background-color: seagreen;
+    display: flex;
+    flex-direction:column;
+}
+
+.price{
+    border: 2px solid rgb(110, 248, 110);
+    color: rgb(250, 248, 248);
+    margin: 20px 0 10px 100px;
+    width: 200px;
+    height: 60px;
+    background-color: rgb(43, 226, 141);
+   
+    font-size: 25px;
+    
+}
+.calendrier{
+    padding-left: 100px;
+}
+form>div{
+    width: auto;
+    margin-top: 20px;
+    margin-left: 25px;
+    float: left;
+    
+}
+.case-rese{   
+    background-color: greenyellow;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+}
+.form-reservation input{  
+    border-radius: 5px; 
+    width: 150px;
+    height: 50px;
+    display: flex;   
+}
+div resEmail{
+    width: 300px;
+}
+form>.button{
+    border-radius:5px ;
+    background-color: teal;
+    width: 120px;
+    height: 40px;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-decoration:none ;
+    font-size: 10px;
+   margin-top: 30px;
+    
+    color: thistle;
+}
+ form>button:hover{
+    color: #0e87f8;
+    background-color: #9ecaee;
+    box-shadow: 0 0 10px #2196f3,0 0 40px #2196f3,0 0 80px #2196f3 ;
+    
+
+}
+/*Descriptif de la page présentation*/
+.description{
+    background-color: rgb(135, 185, 202);
+
+}
+.description>h2{
+    color: rgb(31, 109, 105);
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+.listDescri{
+    margin: 0 auto;
+    background-color: moccasin;
+    width: 900px;
+    height: 300px;
+
+}
+.listDescri>ul>li{
+    padding: 10px 20px;
+    font-size: 25px;
+}
+.calendrier{
+    padding-left: 100px;
+}
